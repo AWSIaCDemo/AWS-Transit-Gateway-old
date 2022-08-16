@@ -24,8 +24,7 @@ The following resources will be created:
 
 ```hcl
 module "transit_gateway" {
-  source = "git::https://github.com/DNXLabs/terraform-aws-transit-gateway.git?ref=0.0.1"
-
+  
   name                       = local.workspace.org_name
   account_name               = local.workspace.account_name
   transit_gateway_account_id = local.workspace.transit_gateway.attachment.transit_gateway_account_id
